@@ -1,0 +1,7 @@
+name: AquaLookup
+version: '${project.version}'
+main: xyz.aquaticraft.aquadiscorddata.AquaDiscordData
+api-version: 1.18
+authors: [ Seailz ]
+description: Data for players on the server!
+website: www.aquaticraft.xyz
