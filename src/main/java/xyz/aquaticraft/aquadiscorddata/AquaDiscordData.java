@@ -22,7 +22,7 @@ public final class AquaDiscordData extends JavaPlugin {
     public void onEnable() {
         Bukkit.getLogger().info("AquaLookup is starting...");
         try {
-            JDABuilder.createDefault("OTUzNjUzNjA4MDMxODYyODM3.YjHtIg.2mp8Ua576O6VaqOPb008sIpUjCw")
+            JDABuilder.createDefault("no")
                     .setActivity(Activity.playing("play.aquaticraft.xyz"))
                     .addEventListeners(new MessageSent())
                     .build();
