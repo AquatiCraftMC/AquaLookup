@@ -3,17 +3,11 @@ package xyz.aquaticraft.aquadiscorddata;
 import net.dv8tion.jda.api.JDA;
 import net.dv8tion.jda.api.JDABuilder;
 import net.dv8tion.jda.api.entities.Activity;
-import net.dv8tion.jda.api.events.GenericEvent;
-import net.dv8tion.jda.api.events.ReadyEvent;
-import net.dv8tion.jda.api.events.interaction.command.SlashCommandInteractionEvent;
-import net.dv8tion.jda.api.hooks.ListenerAdapter;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
-import xyz.aquaticraft.aquadiscorddata.Listeners.MessageSent;
+import xyz.aquaticraft.aquadiscorddata.AquaCore.Listeners.MessageSent;
 
 import javax.security.auth.login.LoginException;
-import java.util.Collections;
-import java.util.EventListener;
 
 public final class AquaDiscordData extends JavaPlugin {
 
@@ -22,7 +16,7 @@ public final class AquaDiscordData extends JavaPlugin {
     public void onEnable() {
         Bukkit.getLogger().info("AquaLookup is starting...");
         try {
-            JDABuilder.createDefault("no")
+            JDABuilder.createDefault("OTUzNjUzNjA4MDMxODYyODM3.YjHtIg.UksoV19LowcqBXNg2dERloZ2QDk")
                     .setActivity(Activity.playing("play.aquaticraft.xyz"))
                     .addEventListeners(new MessageSent())
                     .build();
